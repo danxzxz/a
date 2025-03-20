@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PageMaker</title>
+    <script src="funcoes.js"></script>
+</head>
+
+<body>
+    <div>
+        <h1>Cabeçalho</h1>
+
+        Cor de fundo
+        <select name="corFundo" id="corFundo">
+            <option>--</option>
+            <option value="#FF0000" style="background-color: #FF0000; color: white;">Vermelho</option>
+            <option value="#FF0000" style="background-color: #00FF00; color: black;">Verde</option>
+            <option value="#FF0000" style="background-color: #0000FF; color: white;">Azul</option>
+            <option value="#FF0000" style="background-color: #FFFF00; color: black;">Amarelo</option>
+            <option value="#FF0000" style="background-color: #FFA500; color: black;">Laranja</option>
+            <option value="#FF0000" style="background-color: #800080; color: white;">Roxo</option>
+        </select><br>
+
+
+        Texto para Cabeçalho
+        <input type="text" name="textoCabecalho" id="textoCabecalho"><br>
+
+
+        Cor da fonte
+        <select name="corFonte" id="corFonte">
+            <option>--</option>
+            <option value="#FF0000" style="background-color: #FF0000; color: white;">Vermelho</option>
+            <option value="#FF0000" style="background-color: #00FF00; color: black;">Verde</option>
+            <option value="#FF0000" style="background-color: #0000FF; color: white;">Azul</option>
+            <option value="#FF0000" style="background-color: #FFFF00; color: black;">Amarelo</option>
+            <option value="#FF0000" style="background-color: #FFA500; color: black;">Laranja</option>
+            <option value="#FF0000" style="background-color: #800080; color: white;">Roxo</option>
+        </select><br>
+
+
+        Tamanho fonte
+        <select name="tamFonte" id="tamFonte">
+            <option>--</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+        </select><br>
+
+    </div>
+    <div>
+        <br><h1>Links</h1>
+        Texto para os links
+        <input type="text" name="links" id="links" placeholder="link1; link2; link3....">
+        <br>
+
+
+        Cor do link
+        <select name="corLinks" id="corLinks">
+            <option>--</option>
+            <option value="#FF0000" style="background-color: #FF0000; color: white;">Vermelho</option>
+            <option value="#FF0000" style="background-color: #00FF00; color: black;">Verde</option>
+            <option value="#FF0000" style="background-color: #0000FF; color: white;">Azul</option>
+            <option value="#FF0000" style="background-color: #FFFF00; color: black;">Amarelo</option>
+            <option value="#FF0000" style="background-color: #FFA500; color: black;">Laranja</option>
+            <option value="#FF0000" style="background-color: #800080; color: white;">Roxo</option>
+        </select><br>
+
+
+        Estilo do link <br>
+
+        Sublinhado <input type="radio" name="estiloLinks" id="estiloLinks" value="1"><br>
+        Não Sublinhado <input type="radio" name="estiloLinks" id="estiloLinks" value="0"><br>
+
+        <button onclick="gerarCodigo()">Gerar código</button>
+    </div>
+    <br>
+
+    HTML
+    <div>
+        <textarea id="codeHTML" cols="100" rows="15"></textarea><br>
+        <button onclick="download('codeHTML', 'index.html')">download do código</button>
+    </div>
+    <br>
+    CSS
+    <div>
+        <textarea id="codeCSS" cols="100" rows="15"></textarea><br>
+        <button onclick="download('codeCSS', 'estilo.css')">download do código</button>
+    </div>
+</body>
+
+</html>
